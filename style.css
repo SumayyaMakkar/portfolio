@@ -1,0 +1,225 @@
+/* header part */
+*{
+    font-family:  'Roboto Condensed', sans-serif;;
+}
+.logo{
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 26px;   
+}
+.header{
+     display: flex; /* to place block element in the sameline */
+    justify-content: space-between; /* to align one item on left and one item on right */
+    align-items: center; 
+
+}
+.navlinks{
+    margin-right: 60px;
+    display: flex;
+    list-style-type: none;  /* to make it unordered list */
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 10px; /*to give space btween two links */
+}
+.links:hover{   /* link color touch chhymbo change cheyyan */
+    color: red;
+}
+/* home section */
+#home{
+    margin-top: 100px;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.titleh1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.secondname{
+    color: orange;
+}
+.download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px; 
+    /* margin: 30px 0px;  */
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img{   /* parent classinte ullil vere class nu properties kodkan */
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+ /* .images .shape{}   parent classnte agath olla child class edit cheyyan */
+ .images:hover #shape{
+    bottom: 70px;
+ }
+ .images:hover #girl{
+    left: 40%;
+ }
+ /* about section */
+ #about{
+   margin-top: 200px;
+ }
+ .heading{
+    text-align: center;
+    margin-top: 50px;
+ }
+ .heading h3{
+    color: green;
+ }
+ 
+ .about-content{
+    display: grid; /* coloumns ayitt divide cheyyan */
+    grid-template-columns: repeat(2,1fr);   /* 2 coloumn ,frequency*/
+    margin-top: 30px;
+    gap: 2rem;
+    
+ }
+ .information{
+    margin-top: 20px;
+ }
+ .info-box{
+    margin-bottom: 10px;
+ }
+ .info-box span{
+    margin-left:5px;
+ }
+ .about-img img{
+    width: 70%;
+}
+.about-details{
+    text-align: justify;
+    font-size: 18px;
+}
+
+/* skills section */
+#skills{
+    margin-top: 200px;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+.progress-bar{
+    margin-left: 70px;
+    padding-left: 40px;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 85%;
+}
+.base-bar{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+
+}
+.css-bar{
+    background-color: orange;
+    width: 80%;   
+}
+.js-bar{
+    background-color: orange;
+    width: 75%;   
+}
+.angular-bar{
+    background-color: orange;
+    width: 80%;   
+}
+.skill-img img{
+    width: 66%;
+    padding-left: 20px;
+
+}
+#contact{
+    margin-top: 100px;
+
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.icon a{
+    text-decoration: none;
+}
+.icon i{
+    font-size: 30px;
+    color: black;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.icon:hover {
+    background-image: linear-gradient(to bottom right, yellow,red);
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+}
+.footer{
+    margin-top: 100px;
+    text-align: center;
+}
+.up-arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: right;
+    justify-content: center;
+    align-items: center; 
+    background-image: linear-gradient(to bottom right,yellow,red);
+    margin: 0px 10px 50px 0px;
+}
+.up-arrow i{
+    margin-left: 16px;
+    margin-top: 12px;
+    font-size: 30px;
+}
